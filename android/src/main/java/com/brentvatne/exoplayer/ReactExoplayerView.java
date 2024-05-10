@@ -427,7 +427,7 @@ public class ReactExoplayerView extends FrameLayout implements
         });
 
         //Handling the playButton click event
-        ImageButton playButton = playerControlView.findViewById(R.id.exo_play);
+        ImageButton playButton = playerControlView.findViewById(com.google.android.exoplayer2.R.id.exo_play);
         playButton.setOnClickListener((View v) -> {
             if (player != null && player.getPlaybackState() == Player.STATE_ENDED) {
                 player.seekTo(0);
@@ -436,7 +436,7 @@ public class ReactExoplayerView extends FrameLayout implements
         });
 
         //Handling the pauseButton click event
-        ImageButton pauseButton = playerControlView.findViewById(R.id.exo_pause);
+        ImageButton pauseButton = playerControlView.findViewById(com.google.android.exoplayer2.R.id.exo_pause);
         pauseButton.setOnClickListener((View v) -> {
             setPausedModifier(true);
         });
